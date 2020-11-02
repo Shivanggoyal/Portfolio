@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Us</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script>
+
+        function validateForm()
+            {
+            var x = document.getElementById("password");
+            if(x.value.length > 8)
+            {
+                alert("Not possible password");
+            }
+            else{
+                alert("possible password");
+            }
+        }
+          
+        </script>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">Portfolio</a>
+                <ul class="navbar-nav ">
+                    <li class="nav-item ">
+                      <a class="nav-link" href="index.html">Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about_us.html">About Us</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="index.html">Projects</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          More
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Gallery</a>
+                          <a class="dropdown-item" href="#">Services</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Join Us</a>
+                        </div>
+                      </li>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                      </div>
+                </ul>
+            </nav>
+</header>
+
+<section>
+    <div class="container mb-5">
+        <h1 class="text-center text-capitalize pt-5">Contact Us</h1>
+         <hr class="w-50 mx-auto pt-5">
+        <div class="w-50 mx-auto">
+         <form onsubmit="return validateForm()">
+
+            <div class="form-group">
+              <label for="text">Your Name:</label>
+              <input type="text" class="form-control" placeholder="Enter your name" id="text" >
+            </div>
+
+            <div class="form-group">
+              <label for="email">Your Email:</label>
+              <input type="email" class="form-control" placeholder="Enter Email" id="email" autocomplete="off">
+            </div>
+
+            <div class="form-group">
+                <label for="nunmber">Mobile No:</label>
+                <input type="number" class="form-control" placeholder="Enter Mobile No." id="number" autocomplete="off">
+              </div>
+              <div class="form-group">
+                  <label for="password">Set Password:</label>
+                  <input type="password" class="form-control" placeholder="Set Password" id="Password">
+              </div>
+            <div class="form-group form-check">
+              <label>
+                <input type="checkbox"> Remember me
+              </label>
+            </div>
+            <button type="submit" class="btn btn-dark" value="submit">Submit</button>
+          </form>
+          </div>
+
+</div>
+</section>
+
+        <footer class="text-center bg-dark text-light">
+            <p>@copyright abc.com 2020</p>
+        </footer>
+    </body>
+</html>
